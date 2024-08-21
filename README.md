@@ -53,8 +53,7 @@ I envisioned an OperationManager class which kept a HashMap<String,String> of op
 representing lambdas. When a given operation was requested, the String would be converted to a lambda and
 applied to arguments supplied.
 
-Has this approach, clearly both more sophisticated and much more complex to implement, Spring's IoC/DI would
-have been a good choice. Spring JPA could have been used to persist the lambda Strings in a DB table. The 
+Had this approach, clearly both more sophisticated and much more complex to implement, been taken, Spring's IoC/DI would have been a good choice. Spring JPA could have been used to persist the lambda Strings in a DB table. The 
 OperationManager would have been a service which could have been switched out for testing and mocked.
 
 Note that since the operations are represented by Strings, the need for an UnsupportedOperationException would
