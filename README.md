@@ -23,7 +23,7 @@ the lambda expressions. Calculator itself re-throws this exception: I visualize
 a user of Calculator (such as command-line utility) would catch the exception and
 allow the user to re-enter the arguments.
 
-The requirement to allow chaining operations was met and here is an example which requires a Calculator instance:
+The requirement to allow chaining operations was met (using something like the Builder Pattern) and here is an example which requires a Calculator instance:
 
 double result = calculator.init(0).apply(Operation.ADD,100).apply(Operation.DIVIDE,2).apply(Operation.MULTIPLY,3).
     	apply(Operation.SUBTRACT, 120).apply(Operation.SQUARE).getResult();
