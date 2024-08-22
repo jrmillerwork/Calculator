@@ -40,7 +40,7 @@ might be used in the "Help" of a command-line utility version of Calculator.
 There are two separate Junit test classes, one for Calculator and one for the enum Operation -- the latter was
 necessary due to the large amount of functionality incorporated into the enum.
 
-Note on Dependency Injection and a "Road not Taken":
+#Note on Dependency Injection and a "Road not Taken":
 
 Calculator is a very simple program, with only two major files plus a custom exception. No need for dependency
 injection arose. However, an idea I found intriguing was considered: What if it was possible for a user
@@ -62,7 +62,7 @@ have arisen.
 The Operation enum might have been changed for each new operation, although that would have detracted from the elegance of the approach since each dynamically added Operation would have required a code change, but dispensing
 with the enum could have been considered.
 
-In the interest of time and simplicity, the previously describe approach was taken.
+In the interest of time and simplicity, the previously described approach was taken.
 
 ## Installation
 
